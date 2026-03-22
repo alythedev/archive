@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aly.kotb</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+
+            <li class="nav-item">
+                <button class="nav-toggle">
+                    Events
+                    <img src="Assets/arrow.png" class="arrow">
+                </button>
+
+                <ul class="dropdown">
+                    <li><a href="Pages/campfire.html">Campfire Dubai</a></li>
+                    <li><a href="#">ASCS MUN'26</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item">
+                <button class="nav-toggle">
+                    Extracurriculars
+                    <img src="Assets/arrow.png" class="arrow">
+                </button>
+
+                <ul class="dropdown">
+                    <li><a href="#">Hack Club @ASCS</a></li>
+                    <li><a href="#">Journalism Club</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item">
+                <button class="nav-toggle">
+                    Projects
+                    <img src="Assets/arrow.png" class="arrow">
+                </button>
+
+                <ul class="dropdown">
+                    <li><i>*coming soon!*</i></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+<div class="contents-container">
+    <div class="A-image">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcST5uZXtnCQd34YeURP2BNl30Gy8mQ4q4Xv6Hx1xgHpWeVhPJjv" width="70%">
+
+    </div>
+    <div class="A-text">
+        <h1>Welcome to The Archive.</h1>
+        <p>
+            Hi. If you're here, chances are you're at least <i>a little</i> familiar with who I am.
+            <br><br>
+            In case you're new here.. heyo, I'm Aly. I'm an 18yo on the internet, and you've stumbled upon a public archive of some of the work I'm proud of!
+            <br><br>
+            I feel like it's one thing to describe an event you organised or a project you put together, and it's a totally other thing to actually show photos that tell their own story. I don't love my writing, so we're doing photos that tell stories here.
+            <br><br>
+            Thanks for visiting, and I hope you enjoy your stay here! If you're looking for my personal website, <a href="">you can find it here</a>.
+        </p>
+        <div id="contact-buttons">
+            <a href="https://www.linkedin.com/in/aly-kotb" class="contact-button" target="_blank">
+                <img src="Assets/linkedin-icon.png" width="100%">
+            </a>
+
+            <a href="https://hackclub.enterprise.slack.com/team/U08AFJFPRJ7" class="contact-button" target="_blank">
+                <img src="Assets/hc-icon.png" width="100%">
+            </a>
+            <a href="https://github.com/alythedev" class="contact-button" target="_blank">
+                <img src="Assets/github-icon.png" width="100%">
+            </a>
+            <a href="mailto:alimkotb@gmailcom" class="contact-button" target="_blank">
+                <img src="/Assets/mail-icon.png" width="100%">
+            </a>
+
+        </div>
+    </div>
+</div>
+
+</body>
+
+
+
+
+
+
+
+
+
+<script>
+
+document.querySelectorAll(".nav-toggle").forEach(button => {
+    button.addEventListener("click", () => {
+
+        const parent = button.parentElement;
+
+        document.querySelectorAll(".nav-item").forEach(item=>{
+            if(item !== parent){
+                item.classList.remove("active");
+            }
+        });
+
+        parent.classList.toggle("active");
+    });
+});
+
+</script>
+
+</html>

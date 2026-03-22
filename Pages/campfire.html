@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aly.kotb</title>
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+    
+            <li class="nav-item">
+                <button class="nav-toggle">
+                    Events
+                    <img src="../Assets/arrow.png" class="arrow">
+                </button>
+
+                <ul class="dropdown">
+                    <li><a href="#">Campfire Dubai</a></li>
+                    <li><a href="#">ASCS MUN'26</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item">
+                <button class="nav-toggle">
+                    Extracurriculars
+                    <img src="../Assets/arrow.png" class="arrow">
+                </button>
+
+                <ul class="dropdown">
+                    <li><a href="#">Hack Club @ASCS</a></li>
+                    <li><a href="#">Journalism Club</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item">
+                <button class="nav-toggle">
+                    Projects
+                    <img src="../Assets/arrow.png" class="arrow">
+                </button>
+
+                <ul class="dropdown">
+                    <li><i>*coming soon!*</i></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="page-content">
+    <h2>Campfire Dubai</h2>
+    <p>
+        In February 2026, I ran <a href="https://campfire.hackclub.com/dubai" target="_blank">Campfire Dubai</a>. This was a game jam 100% by teens, <i>for teens</i> taking place at the Microsoft MEA Headquarters in Dubai. Campfire also ran in another 200+ cities worldwide!
+        <br><br>
+        I spent two months working on Campfire Dubai. If you're interested to know more, you can check out <a href="https://journal.alykotb.dev/campfire.html" target="_blank" >this journal entry</a>.
+        <br><br>
+        We had to evacuate 3 hours into the event, but it was really fun while it lasted. Here's some photos!
+    </p>
+
+
+    </div>
+</div>
+
+</body>
+
+
+
+
+
+
+
+
+
+<script>
+
+document.querySelectorAll(".nav-toggle").forEach(button => {
+    button.addEventListener("click", () => {
+
+        const parent = button.parentElement;
+
+        document.querySelectorAll(".nav-item").forEach(item=>{
+            if(item !== parent){
+                item.classList.remove("active");
+            }
+        });
+
+        parent.classList.toggle("active");
+    });
+});
+
+</script>
+
+</html>
