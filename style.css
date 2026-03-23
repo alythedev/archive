@@ -184,6 +184,7 @@ h2{
     .contents-container {
         flex-direction: column;
         align-items: center;
+        margin-top: 40px;
     }
 
     .nav-list {
