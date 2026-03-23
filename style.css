@@ -111,6 +111,7 @@ body{
 
 .A-image{
     width: 40%;
+    user-select: none;
 
 }
 
